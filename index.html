@@ -7,17 +7,31 @@
     <title>Navigation Menu</title>
   </head>
   <body>
+  
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
     <div class="container">
-      <div class="logo">
+      <!-- Logo -->
+      <div class="logo" class="openbtn" onclick="openNav()">
         <img src="./assets/logo.jpeg" alt="Logo" />
       </div>
+    
 
-      <div class="hamburger">
+      <!-- Hamburger Menu (Side Panel) -->
+      <div class="menu" class="openbtn" onclick="openNav()" >
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
 
+      <!-- Navigation -->
       <nav class="navigation">
         <ul>
           <li><a href="#">Home</a></li>
@@ -27,6 +41,7 @@
         </ul>
       </nav>
     </div>
-    <script src="/src/main.js"></script>
+    <div class="background-image"></div>
+    <script src="./main.js"></script>
   </body>
 </html>
